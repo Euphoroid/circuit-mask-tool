@@ -1,0 +1,23 @@
+# Publish only these reviewed source files. Everything else stays local.
+/*
+!/.gitignore
+!/index.html
+!/README.md
+!/LICENSE
+!/tests/
+/tests/*
+!/tests/editor.test.cjs
+!/.github/
+/.github/*
+!/.github/workflows/
+/.github/workflows/*
+!/.github/workflows/pages.yml
+
+# Explicitly keep personal designs, reference material and secrets local.
+/masks/
+/reference/
+.env
+.env.*
+*.pem
+*.key
+.DS_Store
